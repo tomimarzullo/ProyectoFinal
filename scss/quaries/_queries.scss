@@ -269,3 +269,29 @@
         }
     }
 }
+
+
+
+@media only screen and (min-width: 1250px) {
+    /* TIENDA */
+    main{
+        .cards-ropa {
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            .ropa-venta {
+                width: 280px;
+                height: 500px;
+                .producto{
+                    width: 260px;
+                    height: 280px;
+                }
+            }
+        }
+        .info-extra{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

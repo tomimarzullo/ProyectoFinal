@@ -1,0 +1,107 @@
+/*----------------------------------MAIN NOSOTROS----------------------------------*/
+main{
+    background-color: map-get($colores, color-fondo);
+    .nos{
+        width: 300px;
+        height: 300px;
+        margin: 30px auto;
+        padding: 30px;
+        background-color: map-get($colores, color-secundario);
+        border-radius: 100%;
+        i{
+            color: #ddd;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            @include texto (#ddd, 16px, center, normal, none);
+        }
+    }
+    .proposito{
+        @include texto (rgba(31, 31, 31, 0.753), 20px, center, normal, none);
+    }
+    .p-nos{
+        padding: 20px;
+        @include texto (black, 18px, center, normal, none);
+    }
+    .cards_nosotros{
+        padding: 20px;
+        margin: 0 auto;
+        width:100%;
+        height: auto;
+        margin-bottom: 25px;
+        background-color: map-get($colores, color-secundario);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        .card_equipo1{
+            text-align: center;
+            margin: 0 auto;
+            padding: 15px;
+            .img_card1{
+                width: 30vh;
+                height: 30vh;
+                margin: 0 auto;
+                border-radius: 100%;
+                background-image: url(../multimedia/Co-fundador1.webp);
+                background-position: center;
+                background-size: cover;
+            }
+            .puesto{
+                color: #ddd;
+                padding: 15px;
+                font-weight: bold;
+            }
+            p{
+                @include texto (#ddd, 16px, center, normal, bold);
+            }
+        }
+        .card_equipo2{
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            .img_card2{
+                width: 30vh;
+                height: 30vh;
+                margin: 0 auto;
+                border-radius: 100%;
+                background-image: url(../multimedia/co-fundador2.webp);
+                background-position: center;
+                background-size: cover;
+            }
+            .puesto{
+                color: #ddd;
+                padding: 15px;
+                font-weight: bold;
+            }
+            p{
+                @include texto (#ddd, 16px, center, normal, bold);
+            }
+        }
+        .card_equipo3{
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            .img_card3{
+                width: 30vh;
+                height: 30vh;
+                border-radius: 100%;
+                background-image: url(../multimedia/Diseñador.webp);
+                background-position: center;
+                background-size: cover;
+            }
+            .puesto{
+                color: #ddd;
+                padding: 15px;
+                font-weight: bold;
+            }
+            p{
+                @include texto (#ddd, 16px, center, normal, bold);
+            }
+        }
+    }
+}
+
+

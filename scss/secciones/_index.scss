@@ -1,0 +1,146 @@
+/*----------------------------------MAIN INICIO----------------------------------*/
+main {
+    width: 100%;
+    height: auto;
+    background-color: map-get($colores, color-fondo);
+    .logo {
+        width: 100%;
+        padding: 40px;
+        @include flex (flex, row, center, center);
+        img {
+            width: 150px;
+            border-radius: 10%;
+        }
+    }
+    .lafeliz{
+        @include flex (flex, none, center, none);
+        gap: 15px;
+        p{
+            @include texto (black, 16px, center, normal, none);
+            span{
+                padding: 8px;
+            }
+            i{
+                color: black;
+                font-size: $tamaño-texto;
+            }
+        }
+    }
+    .call {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        font-size: $tamaño-texto;
+        background-color: map-get($colores, color-secundario);
+        border-radius: 10px;
+        p{
+            @include texto (#ddd, 18px, center, italic, none);
+        }
+    }
+    .galeria {
+        width:100%;
+        height: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-areas: 
+        "gal1"
+        "gal2"
+        "gal3"
+        "gal4"
+        "gal5"
+        "gal6";
+        grid-gap: 15px;
+        .item {
+            margin: 0 auto;
+            width: 80%;
+            height: 280px;
+            border: 5px solid black;
+            box-shadow: 8px 5px 12px rgb(0, 0, 0);
+            border-radius: 15px;
+            background-position: center;
+            background-size: cover;
+        }
+        .item1 {
+            grid-area: gal1;
+            background-image: url(../multimedia/photo1.webp);
+        }
+        .item2 {
+            grid-area: gal2;
+            background-image: url(../multimedia/photo2.webp);   
+        }
+        .item3 {
+            grid-area: gal3;
+            background-image: url(../multimedia/fondocontacto.webp);
+        }
+        .item4 {
+            grid-area: gal4;
+            background-image: url(../multimedia/photo4.webp);
+        }
+        .item5 {
+            grid-area: gal5;
+            background-image: url(../multimedia/photo5.webp);
+        }
+        .item6 {
+            grid-area: gal6;
+            background-image: url(../multimedia/photo6.webp);
+        }
+    }
+    .ofertas {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+        margin: 25px auto;
+        border: 5px solid black;
+        .mail {
+            @include flex (flex, column, center, none);
+            p {
+                @include texto (black, 18px, center, normal, none);
+            }
+            .input-mail{
+                width: 200px;
+                padding: 5px;
+                margin: 8px auto;
+            }
+            .submit {
+                padding: 5px 20px;
+                margin: 8px auto;
+                border: 1px solid black;
+                &:hover {
+                    background-color: rgba(54, 129, 228, 0.822);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+.wpp{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: green;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    @include flex (flex, none, center, center);
+    transition-duration: 1.2s;
+    box-shadow: 0 0 10px black;
+    &:hover{
+        transform: scale(1.5);
+    }
+    a{
+        text-decoration: none;
+        i{
+            color: #ddd;
+            font-size: 25px;
+        }
+    }
+}
+
+
+
+
+

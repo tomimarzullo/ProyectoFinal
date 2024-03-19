@@ -119,14 +119,19 @@ main .lafeliz p i {
   font-size: 18px;
 }
 main .call {
-  width: 100%;
+  width: 70%;
   height: auto;
+  margin: 30px auto;
   padding: 25px;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.993);
   border-radius: 10px;
 }
 main .call p {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
   color: #ddd;
   font-size: 18px;
   text-align: center;
@@ -395,14 +400,14 @@ main .cards-ropa {
 main .cards-ropa .ropa-venta {
   padding: 10px;
   margin: 20px auto;
-  width: 200px;
-  height: auto;
+  width: 225px;
+  height: 480px;
   background-color: rgba(0, 0, 0, 0.993);
   border-radius: 10px;
 }
 main .cards-ropa .ropa-venta .producto {
-  width: 180px;
-  height: 200px;
+  width: 205px;
+  height: 265px;
   transition-duration: 2s;
 }
 main .cards-ropa .ropa-venta .producto:hover {
@@ -475,7 +480,16 @@ main .conteiner_contacto .formulario {
   width: 100%;
   text-align: center;
 }
+main .conteiner_contacto .formulario h3 {
+  text-align: center;
+  color: #ddd;
+}
+main .conteiner_contacto .formulario form {
+  padding: 20px;
+  border: 2px solid #ddd;
+}
 main .conteiner_contacto .formulario form .form-contacto {
+  width: 100%;
   padding: 4px;
 }
 main .conteiner_contacto .formulario form .submit-contacto, main .conteiner_contacto .formulario form .reset-contacto {
@@ -580,6 +594,10 @@ main .conteiner_contacto .mapa .info .mail-bkn p {
   }
   .cards-ropa .ropa-venta .producto {
     width: 160px;
+  }
+  /*CONTACTO*/
+  main .conteiner_contacto .formulario form .form-contacto {
+    width: 60%;
   }
   /* FOOTER */
   footer .iconos p {
@@ -689,11 +707,14 @@ main .conteiner_contacto .mapa .info .mail-bkn p {
     display: flex;
     flex-direction: none;
     justify-content: space-evenly;
-    align-items: none;
+    align-items: center;
     flex-wrap: nowrap;
   }
   main .conteiner_contacto .formulario {
     width: 50%;
+  }
+  main .conteiner_contacto .mapa {
+    width: 40%;
   }
   /* FOOTER */
   footer .iconos .texto-footer {

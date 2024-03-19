@@ -28,14 +28,14 @@ main {
         .ropa-venta {
             padding: 10px;
             margin: 20px auto;
-            width: 200px;
-            height: auto;
+            width: 225px;
+            height: 480px;
             background-color: map-get($colores, color-secundario);
             border-radius: 10px;
 
             .producto {
-                width: 180px;
-                height: 200px;
+                width: 205px;
+                height: 265px;
                 transition-duration: 2s;
 
                 &:hover {

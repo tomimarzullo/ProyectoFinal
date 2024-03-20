@@ -464,7 +464,7 @@ main .info-extra {
 main .info-extra .cards {
   padding: 10px;
   margin: 30px auto;
-  width: 225px;
+  width: 230px;
   height: auto;
   text-align: center;
 }
@@ -735,9 +735,8 @@ main .conteiner_contacto .mapa .info .mail-bkn p {
   }
   /* TIENDA */
   main .info-extra {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
   }
   /*MAIN CONTACTO*/
   main .conteiner_contacto {
@@ -777,6 +776,10 @@ main .conteiner_contacto .mapa .info .mail-bkn p {
   main .cards-ropa .ropa-venta .producto {
     width: 260px;
     height: 280px;
+  }
+  main .info-extra {
+    margin: 0 auto;
+    width: 60%;
   }
 }
 

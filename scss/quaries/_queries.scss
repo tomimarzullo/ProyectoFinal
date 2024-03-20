@@ -240,9 +240,8 @@
      /* TIENDA */
     main{
         .info-extra{
-            width: 100%;
-            display: flex;
-            justify-content: center;
+            margin: 0 auto;
+            width: 70%;
         }
     }
 
@@ -298,6 +297,10 @@
                     height: 280px;
                 }
             }
+        }
+        .info-extra{
+            margin: 0 auto;
+            width: 60%;
         }
     }
 }

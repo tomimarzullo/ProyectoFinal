@@ -237,6 +237,16 @@
     }
 
 
+     /* TIENDA */
+    main{
+        .info-extra{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
 
     /*MAIN CONTACTO*/
     main{
@@ -282,16 +292,12 @@
             gap: 15px;
             .ropa-venta {
                 width: 280px;
-                height: 500px;
+                height: 490px;
                 .producto{
                     width: 260px;
                     height: 280px;
                 }
             }
-        }
-        .info-extra{
-            display: flex;
-            justify-content: space-between;
         }
     }
 }

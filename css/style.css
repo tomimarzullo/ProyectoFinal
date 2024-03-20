@@ -388,10 +388,11 @@ main .tabla-medidas {
   gap: 20px;
 }
 main .tabla-medidas .medidas {
-  width: 200px;
+  width: 250px;
 }
 main .cards-ropa {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -400,14 +401,14 @@ main .cards-ropa {
 main .cards-ropa .ropa-venta {
   padding: 10px;
   margin: 20px auto;
-  width: 225px;
-  height: 480px;
+  width: 250px;
+  height: 510px;
   background-color: rgba(0, 0, 0, 0.993);
   border-radius: 10px;
 }
 main .cards-ropa .ropa-venta .producto {
-  width: 205px;
-  height: 265px;
+  width: 230px;
+  height: 300px;
   transition-duration: 2s;
 }
 main .cards-ropa .ropa-venta .producto:hover {
@@ -423,7 +424,7 @@ main .cards-ropa .ropa-venta p {
   font-weight: none;
 }
 main .cards-ropa .ropa-venta .tamaño {
-  margin: 12px auto;
+  margin: 10px auto;
   display: flex;
   justify-content: center;
 }
@@ -452,14 +453,14 @@ main .info-extra {
 }
 main .info-extra .cards {
   padding: 10px;
-  margin: 20px auto;
+  margin: 30px auto;
   width: 225px;
   height: auto;
   text-align: center;
 }
 main .info-extra .cards i {
-  padding: 10px;
-  font-size: 45px;
+  padding: 25px;
+  font-size: 50px;
 }
 main .info-extra .cards p {
   font-size: 20px;
@@ -722,6 +723,12 @@ main .conteiner_contacto .mapa .info .mail-bkn p {
   main .ofertas {
     width: 50%;
   }
+  /* TIENDA */
+  main .info-extra {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   /*MAIN CONTACTO*/
   main .conteiner_contacto {
     display: flex;
@@ -755,15 +762,11 @@ main .conteiner_contacto .mapa .info .mail-bkn p {
   }
   main .cards-ropa .ropa-venta {
     width: 280px;
-    height: 500px;
+    height: 490px;
   }
   main .cards-ropa .ropa-venta .producto {
     width: 260px;
     height: 280px;
-  }
-  main .info-extra {
-    display: flex;
-    justify-content: space-between;
   }
 }
 

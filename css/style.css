@@ -390,6 +390,16 @@ main .tabla-medidas {
 main .tabla-medidas .medidas {
   width: 250px;
 }
+main .cartel-productos {
+  margin: 25px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+main .cartel-productos h4 {
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.993);
+  text-align: center;
+}
 main .cards-ropa {
   width: 80%;
   margin: 0 auto;

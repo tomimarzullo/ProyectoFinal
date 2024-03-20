@@ -18,6 +18,17 @@ main {
         }
     }
 
+    .cartel-productos{
+        margin: 25px;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        h4{
+            padding: 20px;
+            color: map-get($colores , color-secundario);
+            text-align: center;
+        }
+    }
+
     .cards-ropa {
         width: 80%;
         margin: 0 auto;
